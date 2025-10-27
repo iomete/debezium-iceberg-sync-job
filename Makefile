@@ -1,4 +1,4 @@
-image 	:= iomete/debezium-iceberg-sync-job:1.1.0-latest
+image 	:= iomete.azurecr.io/iomete/debezium-iceberg-sync-job:1.2.0
 
 run:
 	./gradlew quarkusDev
@@ -14,7 +14,7 @@ docker-build: build
 
 .PHONY: docker-push
 docker-push: build
-	docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t $(image) --push .
+	docker buildx build --platform linux/amd64,linux/arm64 -sbom=true --provenance=true -f Dockerfile -t $(image) --push .
 	@echo $(image)
 
 docker-debug:

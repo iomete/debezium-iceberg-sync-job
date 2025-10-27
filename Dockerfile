@@ -1,4 +1,4 @@
-FROM iomete/spark:3.3.6-latest
+FROM iomete.azurecr.io/iomete/spark:3.5.5-v3
 
 # Remove MySQL connector from base image which is conflicting with the one deployed by Quarkus
 USER root
