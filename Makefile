@@ -14,7 +14,7 @@ docker-build: build
 
 .PHONY: docker-push
 docker-push: build
-	docker buildx build --platform linux/amd64,linux/arm64 -sbom=true --provenance=true -f Dockerfile -t $(image) --push .
+	docker buildx build --platform linux/amd64,linux/arm64 --sbom=true --provenance=true -f Dockerfile -t $(image) --push .
 	@echo $(image)
 
 docker-debug:
