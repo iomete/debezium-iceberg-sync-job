@@ -23,7 +23,7 @@ dependencies {
 
 
     //Apache Spark
-    compileOnly("org.apache.spark:spark-sql_2.12:3.2.4") {
+    compileOnly("org.apache.spark:spark-sql_2.12:3.5.9") {
         exclude(group = "org.slf4j")
     }
     compileOnly("org.apache.iceberg:iceberg-spark-runtime-3.2_2.12:0.13.2")
