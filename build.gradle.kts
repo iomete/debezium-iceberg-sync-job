@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation(enforcedPlatform("io.quarkus.platform:quarkus-bom:2.16.3.Final"))
+    implementation(enforcedPlatform("io.quarkus.platform:quarkus-bom:2.16.12.Final"))
 
     implementation("io.debezium:debezium-server-core:2.1.4.Final")
     implementation("io.debezium:debezium-scripting:2.1.4.Final")
