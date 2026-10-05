@@ -3,7 +3,7 @@ val quarkusPluginVersion: String by project
 plugins {
     java
 
-    id("io.quarkus") version "2.16.3.Final"
+    id("io.quarkus") version "2.16.12.Final"
 }
 
 repositories {
