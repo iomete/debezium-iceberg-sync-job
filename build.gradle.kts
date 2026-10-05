@@ -19,7 +19,7 @@ dependencies {
     implementation("io.debezium:debezium-connector-postgres:2.1.4.Final")
     implementation("io.debezium:debezium-connector-mysql:2.1.4.Final")
 
-    implementation("io.debezium:debezium-connector-sqlserver:2.1.4.Final")
+    implementation("io.debezium:debezium-connector-sqlserver:2.7.4.Final")
 
 
     //Apache Spark
