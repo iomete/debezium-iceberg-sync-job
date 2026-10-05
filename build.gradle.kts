@@ -15,7 +15,7 @@ dependencies {
     implementation(enforcedPlatform("io.quarkus.platform:quarkus-bom:2.16.12.Final"))
 
     implementation("io.debezium:debezium-server-core:2.1.4.Final")
-    implementation("io.debezium:debezium-scripting:2.1.4.Final")
+    implementation("io.debezium:debezium-scripting:2.7.4.Final")
     implementation("io.debezium:debezium-connector-postgres:2.1.4.Final")
     implementation("io.debezium:debezium-connector-mysql:2.7.4.Final")
 
